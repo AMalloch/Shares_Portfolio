@@ -1,0 +1,16 @@
+import React from "react";
+
+const DisplayShare = (props) => {
+  if(!props.share) return null;
+  return (
+    <ul className="shareUl">
+      <li>{props.share.companyName}({props.share.symbol})</li>
+      <li>Sector: {props.share.sector}</li>
+      <li>Quantity: {props.share.volume}</li>
+      <li>Buy Price: £{props.share.price}</li>
+
+    </ul>
+  )
+}
+
+export default DisplayShare;
