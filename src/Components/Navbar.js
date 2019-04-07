@@ -1,8 +1,8 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  return(
+  return (
     <ul>
       <li className="navBarButton">
         <Link to="/">Home</Link>
@@ -14,7 +14,7 @@ const Navbar = () => {
         <Link to="/market_stock">Stock Market</Link>
       </li>
     </ul>
-  )
-}
+  );
+};
 
 export default Navbar;

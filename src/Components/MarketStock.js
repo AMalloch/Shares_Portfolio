@@ -1,45 +1,39 @@
-import React from 'react';
-import NewPortfolioStock from './NewPortfolioStock';
-import _ from 'lodash';
+import React from "react";
+import NewPortfolioStock from "./NewPortfolioStock";
+import _ from "lodash";
 
-const MarketStock = (props) => {
-
+const MarketStock = props => {
   const options = props.stock.map((stockItem, index) => {
-
-    return <option key={index} value={index}>{stockItem.companyName}</option>
-
-
+    return (
+      <option key={index} value={index}>
+        {stockItem.companyName}
+      </option>
+    );
   });
 
   // const sectors = _.uniqBy(props.stock,'sector');
 
-
   const sectors = props.stock.map((stockItem, index) => {
-    return <option key={index} value={stockItem.sector}>{stockItem.sector}</option>
+    return (
+      <option key={index} value={stockItem.sector}>
+        {stockItem.sector}
+      </option>
+    );
   });
 
   const selectedSectors = props.sectorStock.map((item, index) => {
     return <ol key={index}>{item.companyName}</ol>;
-  })
+  });
 
-
-
-
-  const handleChangeSector= (event) => {
+  const handleChangeSector = event => {
     let sector = event.target.value;
     props.onSelectedBySector(sector);
+  };
 
-  }
-
-
-
-  const handleChange = (event) => {
-    let index = event.target.value
+  const handleChange = event => {
+    let index = event.target.value;
     props.onStockSelected(index);
-
-  }
-
-
+  };
 
   return (
     <React.Fragment>
@@ -48,8 +42,11 @@ const MarketStock = (props) => {
         <select
           onChange={handleChange}
           id="Stock-selector"
-          defaultValue="default">
-          <option disabled value="default">SELECT A STOCK</option>
+          defaultValue="default"
+        >
+          <option disabled value="default">
+            SELECT A STOCK
+          </option>
           {options}
         </select>
         {/* <select
@@ -60,14 +57,24 @@ const MarketStock = (props) => {
           {sectors}
         </select>
         {selectedSectors} */}
-        <NewPortfolioStock wallet={props.wallet} currentStock={props.currentStock} onHandleWallet={props.handleWallet}/>
-          <h3 className="breakingNews"><i>Breaking News</i></h3>
-          <h5><a href="https://www.theguardian.com/business/2018/apr/27/tsb-it-meltdown-banking">TSB has been referred to as a Totally Shambolic Bank by angry consumer Jonathan Cruickshank.</a></h5>
+        <NewPortfolioStock
+          wallet={props.wallet}
+          currentStock={props.currentStock}
+          onHandleWallet={props.handleWallet}
+        />
+        <h3 className="breakingNews">
+          <i>Breaking News</i>
+        </h3>
+        <h5>
+          <a href="https://www.theguardian.com/business/2018/apr/27/tsb-it-meltdown-banking">
+            TSB has been referred to as a Totally Shambolic Bank by angry
+            consumer Jonathan Cruickshank.
+          </a>
+        </h5>
       </div>
     </React.Fragment>
-
-  )
-}
+  );
+};
 
 // select a stock to buy, save it by index to a selectedStock array
 // pass that through props back to the marketstock and populate

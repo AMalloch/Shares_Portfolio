@@ -5,7 +5,7 @@
     "sector": "Support services",
     "priceChange": "-19.00",
     "priceChangePercent": "-6.79",
-    "price": 261.00,
+    "price": 261.0,
     "week52High": 273.58,
     "volume": 4420
   },
@@ -15,8 +15,8 @@
     "sector": "Retailers",
     "priceChange": "+4.00",
     "priceChangePercent": "+10.26",
-    "price": 43.00,
-    "week52High": 45.50,
+    "price": 43.0,
+    "week52High": 45.5,
     "volume": 1133
   },
   {
@@ -25,8 +25,8 @@
     "sector": "Investments",
     "priceChange": "+1.90",
     "priceChangePercent": "+4.41",
-    "price": 43.10,
-    "week52High": 43.50,
+    "price": 43.1,
+    "week52High": 43.5,
     "volume": 18806
   },
   {
@@ -35,8 +35,8 @@
     "sector": "Chemicals",
     "priceChange": "+22.00",
     "priceChangePercent": "+5.18",
-    "price": 447.00,
-    "week52High": 425.00,
+    "price": 447.0,
+    "week52High": 425.0,
     "volume": 361521
   },
   {
@@ -45,8 +45,8 @@
     "sector": "Investments",
     "priceChange": "+4.40",
     "priceChangePercent": "+4.23",
-    "price": 108.40,
-    "week52High": 104.00,
+    "price": 108.4,
+    "week52High": 104.0,
     "volume": 69224
   },
   {
@@ -55,8 +55,8 @@
     "sector": "Support services",
     "priceChange": "-3.70",
     "priceChangePercent": "-3.32",
-    "price": 107.60,
-    "week52High": 111.30,
+    "price": 107.6,
+    "week52High": 111.3,
     "volume": 533986
   },
   {
@@ -65,8 +65,8 @@
     "sector": "Pharmaceuticals",
     "priceChange": "-3.00",
     "priceChangePercent": "-2.44",
-    "price": 120.00,
-    "week52High": 123.00,
+    "price": 120.0,
+    "week52High": 123.0,
     "volume": 554136
   },
   {
@@ -75,8 +75,8 @@
     "sector": "Travel & Leisure",
     "priceChange": "+15.40",
     "priceChangePercent": "+4.44",
-    "price": 362.10,
-    "week52High": 363.00,
+    "price": 362.1,
+    "week52High": 363.0,
     "volume": 4836228
   },
   {
@@ -85,8 +85,8 @@
     "sector": "Retailers",
     "priceChange": "+5.00",
     "priceChangePercent": "+2.13",
-    "price": 240.00,
-    "week52High": 234.50,
+    "price": 240.0,
+    "week52High": 234.5,
     "volume": 15285097
   },
   {
@@ -95,8 +95,8 @@
     "sector": "Pharmaceuticals",
     "priceChange": "+63.50",
     "priceChangePercent": "+5.04",
-    "price": 1324.50,
-    "week52High": 1252.00,
+    "price": 1324.5,
+    "week52High": 1252.0,
     "volume": 1003303
   },
   {
@@ -105,7 +105,7 @@
     "sector": "Retailers",
     "priceChange": "+19.00",
     "priceChangePercent": "+6.79",
-    "price": 198.00,
+    "price": 198.0,
     "week52High": 201.58,
     "volume": 5420
   },
@@ -115,8 +115,8 @@
     "sector": "Retailers",
     "priceChange": "-2.69",
     "priceChangePercent": "-3.57",
-    "price": 40.00,
-    "week52Average": 45.50,
+    "price": 40.0,
+    "week52Average": 45.5,
     "volume": 3625
   }
 ]
