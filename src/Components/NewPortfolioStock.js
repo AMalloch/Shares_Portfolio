@@ -33,6 +33,7 @@ class NewPortfolioStock extends React.Component {
 
     let newWalletTotal = this.props.wallet - this.totalPrice();
     this.props.onHandleWallet(newWalletTotal);
+    this.props.portfolioRunner();
     this.setState({ volume: "0" });
   };
 

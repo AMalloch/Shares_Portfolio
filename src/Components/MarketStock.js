@@ -61,6 +61,7 @@ const MarketStock = props => {
           wallet={props.wallet}
           currentStock={props.currentStock}
           onHandleWallet={props.handleWallet}
+          portfolioRunner={props.portfolioRunner}
         />
         <h3 className="breakingNews">
           <i>Breaking News</i>

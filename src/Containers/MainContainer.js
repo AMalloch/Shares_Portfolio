@@ -120,6 +120,7 @@ class MainContainer extends React.Component {
                 wallet={this.state.wallet}
                 handleWallet={this.updateWallet}
                 sectorStock={this.state.sectorStock}
+                portfolioRunner={this.portfolioRunner}
                 onSelectedBySector={this.handleSelectedSector}
               />
             )}
