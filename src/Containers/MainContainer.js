@@ -2,7 +2,7 @@ import React from "react";
 import Home from "../Components/Home";
 import Navbar from "../Components/Navbar";
 import Portfolio from "../Components/Portfolio";
-import MarketStock from "../Components/MarketStock";
+import StockMarketSearch from "../Components/StockMarketSearch";
 import NewPortfolioStock from "../Components/NewPortfolioStock";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
@@ -27,7 +27,7 @@ class MainContainer extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:3001/market_stock")
+    fetch("http://localhost:3001/stock_market_search")
       .then(response => response.json())
       .then(json => this.setState({ stock: json }));
 
@@ -91,9 +91,9 @@ class MainContainer extends React.Component {
           />
           <Route exact path="/" component={Home} stock={this.state.stock} />
           <Route
-            path="/market_stock"
+            path="/stock_market_search"
             render={() => (
-              <MarketStock
+              <StockMarketSearch
                 stock={this.state.stock}
                 onStockSelected={this.handleStockSelected}
                 newStock={this.state.currentStock}

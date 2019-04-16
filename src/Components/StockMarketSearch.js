@@ -2,7 +2,7 @@ import React from "react";
 import NewPortfolioStock from "./NewPortfolioStock";
 import _ from "lodash";
 
-const MarketStock = props => {
+const StockMarketSearch = props => {
   const options = props.stock.map((stockItem, index) => {
     return (
       <option key={index} value={index}>
@@ -50,4 +50,4 @@ const MarketStock = props => {
   );
 };
 
-export default MarketStock;
+export default StockMarketSearch;

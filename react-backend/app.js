@@ -39,24 +39,27 @@ MongoClient.connect("mongodb://localhost:27017", function(err, client) {
 
   //  API STOCK MARKET COLLECTION
 
-  app.get("/market_stock", function(req, res) {
-    const marketStockCollection = db.collection("market_stock");
-    marketStockCollection.find().toArray(function(err, marketStock) {
+  app.get("/stock_market_search", function(req, res) {
+    const StockMarketSearchCollection = db.collection("market_stock");
+    StockMarketSearchCollection.find().toArray(function(
+      err,
+      StockMarketSearch
+    ) {
       if (err) {
         console.log(err);
         res.status(500);
         res.send();
       }
 
-      res.json(marketStock);
+      res.json(StockMarketSearch);
     });
   });
 
-  app.post("/market_stock", function(req, res) {
-    const marketStockCollection = db.collection("market_stock");
+  app.post("/stock_market_search", function(req, res) {
+    const StockMarketSearchCollection = db.collection("market_stock");
     const stockToSave = req.body;
 
-    marketStockCollection.save(stockToSave, function(err, result) {
+    StockMarketSearchCollection.save(stockToSave, function(err, result) {
       if (err) {
         console.log(err);
         res.status(500);
@@ -70,12 +73,12 @@ MongoClient.connect("mongodb://localhost:27017", function(err, client) {
     });
   });
 
-  app.delete("/market_stock", function(req, res) {
-    const marketStockCollection = db.collection("market_stock");
+  app.delete("/stock_market_search", function(req, res) {
+    const StockMarketSearchCollection = db.collection("market_stock");
 
     const filterObject = {};
 
-    marketStockCollection.deleteMany(filterObject, function(err, result) {
+    StockMarketSearchCollection.deleteMany(filterObject, function(err, result) {
       if (err) {
         console.log(err);
         res.status(500);

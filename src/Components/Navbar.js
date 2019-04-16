@@ -11,7 +11,7 @@ const Navbar = () => {
         <Link to="/portfolio">Portfolio</Link>
       </li>
       <li className="navBarButton">
-        <Link to="/market_stock">Stock Market</Link>
+        <Link to="/stock_market_search">Stock Market</Link>
       </li>
     </ul>
   );
