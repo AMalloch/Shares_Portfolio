@@ -1,12 +1,9 @@
 import React from "react";
 import TitleBar from "./TitleBar";
-import { Link } from "react-router-dom";
 import BootstrapTable from "react-bootstrap-table-next";
 import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
-import overlayFactory from "react-bootstrap-table2-overlay";
 
-const Home = props => {
-  // const data = props.stock
+const Home = () => {
   const data = [
     {
       _id: "5ae98a79565760910cb6fd22",
@@ -168,17 +165,8 @@ const Home = props => {
   return (
     <React.Fragment>
       <TitleBar />
-
-      {/* <div className="button-portfolio">
-      <Link to='/portfolio'>Portfolio</Link>
-    </div>
-    <div className="button-stock">
-      <Link to='/market_stock'>Market Stock</Link>
-    </div> */}
-
       <div className="stock-div">
         <h3 id="titleRaF">RISERS AND FALLERS</h3>
-
         <BootstrapTable
           keyField="symbol"
           data={data}
