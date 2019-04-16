@@ -15,7 +15,6 @@ class MainContainer extends React.Component {
     this.handleSelectedSector = this.handleSelectedSector.bind(this);
     this.updateWallet = this.updateWallet.bind(this);
     this.portfolioRunner = this.portfolioRunner.bind(this);
-    // this.handleStockMarket = handleStockMarket.bind(this);
     this.state = {
       stock: [],
       portfolio: [],
@@ -26,16 +25,6 @@ class MainContainer extends React.Component {
       wallet: "10000000"
     };
   }
-
-  // handlePortfolio(){
-  //   // event.preventDefault();
-  //   console.log(this.state.portfolio);
-  //
-  // }
-  //
-  // handleStockMarket(){
-  //   this.setState({stock});
-  // }
 
   componentDidMount() {
     fetch("http://localhost:3001/market_stock")
@@ -54,7 +43,6 @@ class MainContainer extends React.Component {
   }
 
   handlePortfolioSelected(index) {
-    // debugger;
     const selectedShare = this.state.portfolio[index];
     this.setState({ currentShare: selectedShare });
   }
@@ -70,7 +58,6 @@ class MainContainer extends React.Component {
 
   handleSelectedSector(index) {
     const newArray = [];
-    // debugger;
     this.state.stock.map(item => {
       if (item.sector === index) {
         newArray.push(item);
@@ -84,10 +71,6 @@ class MainContainer extends React.Component {
   }
 
   render() {
-    // if(!this.state.stock.length){
-    //   return null;
-    // }
-
     return (
       <Router>
         <React.Fragment>
