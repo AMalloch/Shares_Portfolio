@@ -1,6 +1,6 @@
 import React from "react";
 
-const TitleBar = props => {
+const TitleBar = () => {
   return (
     <div className="title">
       <p className="date-now">
