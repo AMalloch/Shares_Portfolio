@@ -3,7 +3,6 @@ import React from "react";
 class NewPortfolioStock extends React.Component {
   constructor(props) {
     super(props);
-    // this.selectedStockForm = this.selectStockForm.bind(this);
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
     this.handleVolumeChange = this.handleVolumeChange.bind(this);
     this.totalPrice = this.totalPrice.bind(this);
