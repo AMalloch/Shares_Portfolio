@@ -125,7 +125,6 @@ const Portfolio = props => {
         <button className="panic" onClick={handleClick}>
           PANIC SELL ALL
         </button>
-        {/* <input type="button" value="Delete ALL" onClick={this.handleClick}/> */}
         <h3>Portfolio Information</h3>
         <h4>Total Portfolio Value: £{totalValue()}</h4>
         <h4>Current Balance Value: £{props.wallet}</h4>
